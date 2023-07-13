@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: aqua;
+    position: fixed;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    margin: -25px;
+    margin-top: -30px;
+}
+
+header {
+    background-image: url(/images/ecommerce.webp);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.buy-Now a {
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(231, 231, 3);
+    border: 5px groove gold;
+    padding: 10px;
+    border-radius: 15px 0px 15px;
+
+}
+
+.buy-Now {
+    position: absolute;
+    margin: 150px;
+    text-shadow: 0.1px 4px 2px black;
+    font-size: larger;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(209, 14, 14);
+
+}

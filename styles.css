@@ -1,0 +1,301 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    background-image: url(/images/bakg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    z-index: -1;
+}
+
+
+nav {
+    display: flex;
+    position: fixed;
+    margin-top: 0px;
+    margin-left: 150px;
+    background-color: #F1F6F9;
+    height: 100px;
+    width: 100%;
+    box-shadow: 2px 1px 3px #F8F1F1;
+    z-index: 0;
+    border-radius: 0px 0px 0px 90px;
+
+
+}
+
+.logo {
+    position: absolute;
+    margin-top: -40px;
+    width: 80%;
+    height: 160px;
+
+}
+
+.logo>img {
+
+    width: 160px;
+    height: 160px;
+
+}
+
+.menu {
+    display: flex;
+    position: relative;
+    top: 40px;
+}
+
+.menu ul {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-left: 250px;
+}
+
+.menu ul li {
+    display: inline;
+    padding-left: 30px;
+
+
+}
+
+
+
+.buy-Now {
+    position: absolute;
+    width: 70%;
+    color: #FFE300;
+    border: 5px solid #FFE300;
+    padding: 10px;
+    border-radius: 20px;
+    text-shadow: 2px 2px 1px #F8F1F1;
+    z-index: -1;
+    top: 200px;
+    margin-left: 20px;
+    background-color: #F8F1F195;
+
+}
+
+.buy-Now h1 {
+    font-size: 4.3rem;
+    text-shadow: 1px 2px 1px blue;
+    padding-bottom: 10px;
+    margin-left: 20px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    gap: 40px;
+    margin-left: 150px;
+    width: 70%;
+    z-index: -1;
+
+
+
+}
+
+.profile {
+    position: absolute;
+    height: 200px;
+    background-color: #a91717;
+    width: 200px;
+    margin-top: 30px;
+    border-radius: 20px;
+    transition: all 0.25s;
+
+
+}
+
+.profile:hover {
+    transform: rotate(45deg);
+    transform: translateX(10px);
+    transform: matrix3d(30deg);
+    background-color: #FFE300;
+}
+
+h2 {
+
+    border: 1px groove #FFE300;
+    background-color: #FFE300;
+    padding: 20px;
+
+}
+
+
+@media (max-width: 780px) {
+
+    header {
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: cover;
+    }
+
+    .container {
+        flex-direction: column;
+
+    }
+
+    header {
+        height: 70vh;
+    }
+
+    .buy-Now {
+        font-size: 10px;
+        bottom: 10px;
+        padding-bottom: 70px;
+
+    }
+
+    .buy-Now h1 {
+        font-size: 2.3rem;
+        text-shadow: 1px 2px 1px blue;
+        padding-bottom: 10px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 30px;
+    }
+
+    nav {
+        width: 100%;
+        margin-left: 85xp;
+        border-radius: 70px 10px 1px 0px;
+    }
+
+    .container {
+
+        margin-left: 28px;
+
+    }
+
+    .search-container {
+
+        left: 10%;
+        top: 45%;
+
+
+    }
+}
+
+
+.second {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 500ms ease-in;
+    overflow: hidden;
+}
+
+.second.active {
+    transform: translateY(0);
+    opacity: 1;
+    overflow: hidden;
+}
+
+.first {
+    position: relative;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: all 500ms ease-in left;
+    overflow: hidden;
+}
+
+.first.active {
+    transform: rotate(0deg);
+    opacity: 1;
+    overflow: hidden;
+}
+
+.third {
+    position: relative;
+    transform: translateX(200px);
+    opacity: 0;
+    transition: all 5s ease-in right;
+    overflow: hidden;
+}
+
+.third.active {
+    transform: translateX(0px);
+    opacity: 1;
+    overflow: hidden;
+}
+
+.footer-container {
+    position: relative;
+    background-color: #885454;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+
+}
+
+footer img {
+    width: 160px;
+    height: 160px;
+}
+
+.search-container {
+    position: absolute;
+    left: 48%;
+    top: 45%;
+    transform: (-50%, -50%);
+    padding: 10px;
+
+}
+
+input {
+    height: 60px;
+    width: 0px;
+    outline: none;
+    padding: 0 20px;
+    color: black;
+    font-size: 20px;
+    box-sizing: border-box;
+    border: 1px solid #d50000;
+    border-radius: 50px;
+    transition: all .7s;
+}
+
+::placeholder {
+    color: grey;
+}
+
+.btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #d50000;
+    line-height: 80px;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn i {
+    font-size: 25px;
+    line-height: 80px;
+    color: white;
+    transition: all .7s ease-in;
+
+}
+
+.search-container:hover input {
+    width: 240px;
+}
+
+.search-container:hover i {
+    transform: rotate(-350deg);
+}
