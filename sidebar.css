@@ -5,6 +5,16 @@
     text-decoration: none;
 }
 
+header {
+    position: relative;
+    background-image: url(/bakg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    z-index: -1;
+}
+
 .sidebar {
     margin-top: 0;
     position: fixed;
